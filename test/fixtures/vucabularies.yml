@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jp: MyString
+  hiragana: MyString
+  vi: MyString
+  lesson_id: 
+
+two:
+  jp: MyString
+  hiragana: MyString
+  vi: MyString
+  lesson_id: 
