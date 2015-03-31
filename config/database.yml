@@ -1,0 +1,24 @@
+common: &common
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  host: localhost
+  username: root
+  password: admin@123
+
+development:
+  <<: *common
+  database: hiepapp_development
+
+test:
+  <<: *common
+  database: hiepapp_test
+
+staging:
+  <<: *common
+  database: hiepapp_staging
+
+production:
+  <<: *common
+  database: hiepaap

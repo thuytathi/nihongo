@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= stylesheet_link_tag "application", media: "all",
+    "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= render "layouts/header"%>
+    <div id="templatemo_main_wrapper">
+    <div id="templatemo_main">
+      <div id="templatemo_main_top">
+        <div id="templatemo_content">
+           <%= yield %>
+      </div>
+       <%= render 'layouts/sibar'%> 
+    </div>
+    <div id="templatemo_main_bottom"></div>
+  </div>
+    <%= render "layouts/footer"%>
+    <%= debug(params) if Rails.env.development? %>
+  </body>
+</html>
